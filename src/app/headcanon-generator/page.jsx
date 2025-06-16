@@ -1,7 +1,6 @@
 "use client";
-import React from "react";
-
-import { useHandleStreamResponse } from "../utilities/runtime-helpers";
+import React, { useState, useEffect, useCallback } from "react";
+import { useHandleStreamResponse } from '../../utilities/runtime-helpers';
 
 function MainComponent() {
   const [prompt, setPrompt] = useState("");
